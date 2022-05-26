@@ -50,7 +50,7 @@ Las tarifas que estos carriers cobran y los DDT que prometen por transportar tus
 - Incluir un archivo readme.md con las instrucciones para levantar tu proyecto.
 - Si usas variables de ambiente, recuerda incluir un archivo .env.example.
 - Adjuntar una colección de Postman con requests de ejemplo para probar tus endpoints de la parte I.
-- El proyecto debe ser subido a un repositorio privado en GitHub y compartirlo a los siguientes usuarios: @rsebjara, @vham, @rolivagon, @vmolina-enviame, @rcarrascop, @psepulvedav.
+- El proyecto debe ser subido a un repositorio privado en GitHub y compartirlo a los siguientes usuarios: **@rsebjara, @vham, @rolivagon, @vmolina-enviame, @rcarrascop, @psepulvedav**.
 
 ## Aspectos a evaluar
 
