@@ -6,7 +6,9 @@
 
 ¡Felicitaciones por llegar hasta aquí! El siguiente desafío busca evaluar tus conocimientos y habilidades en el mundo del desarrollo de software para ocupar el cargo de Developer Experience Engineer. El desafío está dividido en dos partes: API de tarifas y página de consulta.
 
-**Importante: leer el challenge completo antes de comenzar a realizarlo.**
+**Importante:** 
+- **Leer el challenge completo antes de comenzar a realizarlo.**
+- **Tienes un pazo máximo de 7 días para resolver y entregar el desafío.**
 
 ---
 
