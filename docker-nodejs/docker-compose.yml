@@ -1,0 +1,54 @@
+version: "3"
+services:
+    
+  app:
+  
+    build: ${SERVICE_PATH}/Docker/app/.
+  
+    container_name: ${SERVICE_NAME}
+  
+    env_file:
+      - ${SERVICE_PATH}/Docker/app/.env
+      - .env
+    
+    environment:
+      - SEQUELIZE_HOST=${MYSQL_NAME}
+      - SEQUELIZE_DATABASE=${MYSQL_DATABASE}
+      - REDIS_HOST=${REDIS_HOST}
+
+    command: ["npm", "run", "dev"]
+  
+    volumes:
+      - ${SERVICE_PATH}/src:/app/src
+      - ${SERVICE_PATH}/tests:/app/tests
+      
+    ports:
+      - ${APP_PORT}:8080
+    
+    depends_on:
+      - mysql
+      - redis
+  
+  mysql:
+  
+    build: ${SERVICE_PATH}/Docker/database/.
+  
+    restart: always
+  
+    container_name: ${MYSQL_NAME}
+  
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+
+    ports:
+      - ${MYSQL_PORT}:3306
+  
+    command: 
+      - --default-authentication-plugin=mysql_native_password
+
+  redis:
+  
+    container_name: ${REDIS_HOST}
+
+    image: redis:alpine
