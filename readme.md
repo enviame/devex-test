@@ -54,10 +54,10 @@ Las tarifas que estos carriers cobran y los DDT que prometen por transportar tus
 
 ## Aspectos a evaluar
 
-- Funcionalidad (36 pts).
-- Unit tests (12 pts).
-- Documentación (6 pts).
-  - Readme.md con instrucciones sobre cómo levantar tu proyecto.
+- Funcionalidad (36 pts). Parte I (25 pts) y Parte II (11 pts)
+- Unit tests (6 pts).
+- Documentación (12 pts).
+  - Readme.md con instrucciones sobre cómo levantar tu proyecto y manual de uso del aplicativo.
   - Colección de Postman con requests de ejemplo para probar todos los endpoints de tu servicio.
   - Diagrama de estructura de base de datos.
 - Estilo de programación (6 pts).
